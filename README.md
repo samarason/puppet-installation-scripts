@@ -48,7 +48,9 @@ And the script also sets up an example hiera configuration file that can be modi
 
 This example uses onctl to create a Puppet Master VM with the hostname puppetmaster01 using the puppet-master.sh template
 
-`/bin/bash puppet-master.sh`
+```bash
+/bin/bash puppet-master.sh
+```
 
 After installation, remember to log on to the Puppet Master Console and change the admin password ! ( see the puppet-master.sh script for the default password)
 
@@ -75,7 +77,9 @@ Script Install procedure
 
 This example uses the puppet-agent.sh script to install a Puppet Agent with the MASTERIP and MASTER environment variables pointing to the Puppet Master that was previously installed.
 
-`/bin/bash puppet-agent.sh -i 192.168.0.22 -m puppetmaster.local`
+```bash
+/bin/bash puppet-agent.sh -i 192.168.0.22 -m puppetmaster.local
+```
 
 =====================================================================================
 
