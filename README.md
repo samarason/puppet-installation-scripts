@@ -16,17 +16,17 @@ Puppet is a configuration management tool that uses a master-agent architecture.
 Prerequisites  
     System Requirements
 
-Operating System: Puppet Master must run on a UNIX variant (Linux)
-            Memory and Disk space:
-            See the official specs -- https://help.puppet.com/pe/current/topics/hardware_requirements.htm#hardware-requirements
-            But, for a Small Standard installation of a Puppet master, a Minimum of 8 GB RAM is recommended and ca 60Gb of disk space for /opt and /var combined
+Operating System: Puppet Master must run on a UNIX variant (Linux)  
+            Memory and Disk space:  
+            See the official specs -- [https://help.puppet.com/pe/current/topics/hardware_requirements.htm#hardware-requirements](https://help.puppet.com/pe/current/topics/hardware_requirements.htm#hardware-requirements)  
+            But, for a Small Standard installation of a Puppet master, a Minimum of 8 GB RAM is recommended and ca 60Gb of disk space for /opt and /var combined  
             For the Puppet Agent, a Minimum of 4Gb RAM and ca 15Gb disk space for /opt and /var combined
 
-        Network Configuration
+Network Configuration
 
-            The install script ensures proper hostname resolution for the Puppet Master and agents using the  /etc/hosts file
-            Set up NTP (Network Time Protocol) to keep time synchronized between the master and agents
-            Make sure port 8140 is open in the firewall for communication between Master and Agents
+                The install script ensures proper hostname resolution for the Puppet Master and agents using the  /etc/hosts file
+                Set up NTP (Network Time Protocol) to keep time synchronized between the master and agents
+                Make sure port 8140 is open in the firewall for communication between Master and Agents
 
 =====================================================================================
 
@@ -46,7 +46,7 @@ And the script also sets up an example hiera configuration file that can be modi
 
 ## Install Puppet Master
 
-This example uses onctl to create a Puppet Master VM with the hostname puppetmaster01 using the puppet-master.sh template
+This example uses the [puppet-master.sh](http://puppet-master.sh) script to install a Puppet Master on a Linux host.
 
 ```bash
 /bin/bash puppet-master.sh
